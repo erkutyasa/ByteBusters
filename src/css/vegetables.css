@@ -1,16 +1,178 @@
 /*Desktop*/
+.vegetables{
+    background-color: var(--maroon);
+    width: 100%;
+    padding: 10em;
+    gap: 5em;
+    margin: 0 auto;
 
+}
+
+.vegetables-container{
+    width: 85%;
+    max-width: 1280px;
+    margin: 0 auto;
+
+}
+.header-vegetables{
+    font-family: Inter Tight;
+    color:var(--white);
+    font-weight: 600;
+    font-size: 6.4em;
+    letter-spacing: -0.015em;
+    text-align: left;
+    max-width: 50%;
+}
+.vegetables-span{
+    opacity: 0.5;
+}
+.vegetables-paragraph{
+    font-family: Inter Tight;
+    font-size: 1.6em;
+    font-weight: 500;
+    line-height: 2em;
+    text-align: left;
+    color:var(--white);
+    width: 40em;
+}
+.vegetables-text{
+    display: flex;
+    flex-direction: column;
+    gap: 2.5em;
+}
+.vegetables-images{
+    margin-top: 5em;
+}
+.vegetables-menu{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    column-gap: 2.1em;
+    row-gap: 2.1em;
+    justify-content: center;
+    width: 107em;
+}
+.vegetables-menu li{
+    background: var(--white);
+    padding: 3.2em;
+    gap: 1em;
+    border-radius: 4em;
+    list-style: none;
+    width: 34.6em;
+    height: 37.9em;
+
+
+
+}
+.p-eggplant,.p-leek,.p-mushrooms,.p-corn,.p-sweet-patatoes,.p-carrot{
+    color: var(--maroon);
+    font-family: Inter Tight;
+    font-size: 3.2em;
+    font-weight: 600;
+    letter-spacing: -0.015em;
+    text-align: left;
+
+}
+.fee-eggplant,.fee-leek,.fee-mushrooms,.fee-corn,.fee-sweet-patatoes,.fee-carrot{
+    font-family: Inter Tight;
+    font-size: 1.4em;
+    font-weight: 600;
+    line-height: 1.8em;
+    letter-spacing: -0.015em;
+    text-align: left;
+}
 
 
 
 /* Tablet */
 @media only screen and (max-width: 1279px) {
-
+    .vegetables{
+        top: 3051em;
+        padding: 10em 3.2em 10em 3.2em;
+        gap: 5em;
+    }
+    .header-vegetables{
+        font-family: Inter Tight;
+        font-size: 6.4em;
+    
+    }
+    .vegetables-menu{
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 1fr 1fr 1fr;
+        column-gap: 2.1em;
+        row-gap: 2.1em;
+        justify-content: center;
+        width: 70em;
+    }
+    
+    .vegetables-menu li{
+        width: 34.2em;
+        height: 37.9pem;
+        padding: 3.2em 3em 3.2em 3em;
+        gap: 1em;
+        border-radius: 4em;
+    
+    }
+    .vegetables-paragraph{
+        font-size: 1.6em;
+        font-weight: 500;
+        width: 40em;
+    
+    
+    }
 }
 
 
 /* Mobile */
 @media only screen and (max-width: 767px) {
+    .vegetables{
+        min-width: 375px;
+        min-height: 2766px;
+        padding: 8em 2em 8em 2em;
+        gap: 4em;
 
-    
+    }
+    .header-vegetables{
+        font-family: Inter Tight;
+        font-size: 4.8em;
+        font-weight: 600;
+        letter-spacing: -0.015em;
+        text-align: left;
+    }
+    .vegetables-paragraph{
+        font-family: Inter Tight;
+        font-size: 1.4em;
+        font-weight: 500;
+        text-align: left;
+        width: 24em;
+
+
+    }
+    .vegetables-container{
+        margin: 0;
+    }
+    .p-eggplant, .p-leek, .p-mushrooms, .p-corn, .p-sweet-patatoes, .p-carrot{
+        font-size: 2.8em;
+        font-weight: 600;
+        letter-spacing: -0.015em;
+
+    }
+    .vegetables-menu{
+        display: grid;
+        grid-template-columns: 1fr ;
+        grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr;
+        column-gap: 2.1em;
+        row-gap: 2.1em;
+        justify-content: center;
+    }
+    .vegetables-menu li{
+        width: 33.4em;
+        height: 37.9em;
+        padding: 3.2em 2.6em 3.2em 2.6em;
+        gap: 1em;
+        border-radius: 4em;
+
+
+    }
 }
