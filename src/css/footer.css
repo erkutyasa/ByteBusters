@@ -1,16 +1,131 @@
 /*Desktop*/
-
+.footer {
+    background-color: var(--maroon);
+  }
+  .footer-sector-one {
+    display: flex;
+    flex-direction: row;
+    padding-top: 10vh;
+    width: 100vw;
+  }
+  .footer-logo-slogan {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    padding-left: 5vw;
+    width: 40vw;
+  }
+  
+  .footer-slogan {
+    font-family: "Inter Tight";
+    font-weight: 500;
+    line-height: 1em;
+    color: var(--white);
+    font-size: 1.6em;
+    width: 28vw;
+  }
+  .footer-links {
+    display: flex;
+    justify-content: space-between;
+    width: 60vw;
+    padding-left: 5vw;
+  }
+  .footer-internal-link-list {
+    list-style-type: none;
+  }
+  
+  .footer-internal-link-list-item-link {
+    font-family: "Inter Tight";
+    font-weight: 500;
+    line-height: 3.2;
+    letter-spacing: 0.15em;
+    color: var(--white);
+    text-decoration: none;
+    font-size: 3.2em;
+  }
+  
+  .footer-company-contact-information {
+    width: 32vw;
+  }
+  .footer-company-contact-information-list {
+    list-style-type: none;
+  }
+  .footer-company-contact-information-list-item {
+    font-family: "Inter Tight";
+    font-weight: 600;
+    text-decoration: none;
+    line-height: 2;
+    letter-spacing: 0.15em;
+    color: var(--white);
+    font-size: 1.8em;
+    width: 23vw;
+  }
+  .footer-link-tel {
+    font-family: "Inter Tight";
+    font-weight: 600;
+    text-decoration: none;
+    color: var(--white);
+    font-size: 1.8em;
+    line-height: 1.8;
+    letter-spacing: 0.15em;
+  }
+  .footer-privacy-policy-cookie-main {
+    background-color: var(--maroon);
+    color: var(--white);
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: flex-end;
+    padding: 5vw;
+  }
+  
+  .privacy-cookie-link {
+    color: var(--white);
+  
+    cursor: text;
+    text-decoration: none;
+    font-family: "Inter Tight";
+    font-weight: 500;
+    font-size: 1.8em;
+    line-height: 2;
+    letter-spacing: 0.15em;
+  }
+  
+  .footer-slogan-paragraph {
+    width: 20vw;
+  }
+  .footer-adress {
+    display: flex;
+  }
 
 
 
 /* Tablet */
 @media only screen and (max-width: 1279px) {
-
+    .footer-slogan-paragraph {
+        width: 21vw;
+      }
+      .footer-logo-slogan {
+        width: 50vw;
+      }
+      .footer-links {
+        display: flex;
+        flex-direction: column;
+        width: 55vw;
+      }
 }
 
 
 /* Mobile */
 @media only screen and (max-width: 767px) {
-
+    .footer-sector-one {
+        flex-direction: column;
+      }
     
+      .footer-slogan-paragraph {
+        width: 45vw;
+      }
+      .footer-company-contact-information {
+        width: 55vw;
+      }
 }
