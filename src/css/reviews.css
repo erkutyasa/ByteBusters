@@ -1,16 +1,132 @@
 /*Desktop*/
+.reviews-section {
+    padding: 10em 0;
+    width: 100%;
+    color: var(--white);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
 
+.reviews-container {
+    max-width: 1280px;
+    width: 85%;
+}
+
+.reviews-hp-contanier {
+    width: 51%;
+    margin-bottom: 5em;
+}
+
+.reviews-h {
+    font-family: 'Inter tight', sans-serif;
+    color: var(--black);
+    font-size: 6.4em;
+    font-weight: 600;
+    line-height: 1em;
+    letter-spacing: -0.015em;
+    text-align: left;
+}
+
+.reviews-span {
+    color: var(--green);
+}
+
+.reviews-p {
+    color: var(--black);
+    font-family: 'Inter tight', sans-serif;
+    font-size: 1.6em;
+    font-weight: 500;
+    line-height: 2em;
+    text-align: left;
+    margin-top: 2em;
+}
+
+.reviews-human-container {
+    width: 100%;
+    color: var(--black);
+}
+
+.reviews-ul-container {
+    display: flex;
+    gap: 2.5em;
+}
+
+.reviews-li-container {
+    list-style-type: none;
+    display: flex;
+    width: calc((100% - 4rem) / 3);
+    border: .1em solid rgba(122, 49, 69, 0.302);
+    border-radius: 2em;
+}
+
+.reviews-card-container {
+    width: 97%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    gap: 2em;
+    padding: 2em;
+}
+
+.reviews-images {
+    width: 5.6em;
+    height: 5.6em;
+}
+
+.reviews-p-text {
+    font-family: 'Inter Tight', sans-serif;
+    font-size: 1.6em;
+    font-weight: 500;
+    line-height: 2.24em;
+    text-align: center;
+    color: #14141466;
+}
 
 
 
 /* Tablet */
 @media only screen and (max-width: 1279px) {
+    .reviews-container {
+        max-width: 768px;
+        width: 95%;
+    }
 
+    .reviews-hp-contanier {
+        width: 100%;
+    }
+
+    .reviews-hp-contanier {
+        width: 75%;
+    }
+
+    .reviews-li-container {
+        width: calc((100% - 2rem) / 2);
+    }
+
+    .reviews-lithere {
+        display: none;
+    }
 }
 
 
 /* Mobile */
 @media only screen and (max-width: 767px) {
+    .reviews-container {
+        max-width: 450px;
+        min-width: 320px;
+    }
 
-    
+    .reviews-section {
+        margin-top: 8em;
+    }
+
+    .reviews-li-container {
+        width: 100%;
+    }
+
+    .reviews-litwo {
+        display: none;
+    }    
 }
