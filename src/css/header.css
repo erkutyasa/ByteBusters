@@ -1,16 +1,214 @@
 /*Desktop*/
+.header {
+    position: absolute;
+    top: 2em;
+    width: 100%;
+    height: 5.2em;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    
+}
+.header-container {
+    width: 85%;
+    display: flex;
+    max-width: 1280px;
+
+}
+.logo-container {
+    display: flex;
+    align-items: center;
+    flex: 1;
+}
+.navbar-container {
+    font-family: 'Inter Tight' , sans-serif;
+    flex: 1;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.menu-list {
+    cursor: pointer;
+    display: flex;
+    gap: 1em;
+    align-items: center;
+    list-style: none;
+}
+
+.navbar {
+    display: flex;
+    flex-direction: row;
+    gap: 1.5em;
+}
+.media-menu {
+    display: none;
+    z-index: 1000;
+}
+
+.mobile-menu-class {
+    position: relative;
+    display: flex;
+    cursor: pointer;
+    width: 4em;
+    height: 4em;
+    display: none;
+   
+}
+#mobile-menu-id {
+    display: none;
+}
+.menu-link{
+    text-decoration: none;
+    color: var(--white);
+    font-size: 1.6em;
+    line-height: 2em;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 1em 2em;
+    border-radius: 1.2em;
+    background-color: transparent;
+    border: 1px solid;
+    border-color: var(--white);
+    gap: 1em;
+    
+}
+
+.menu-link-shopnow {
+    text-decoration: none;
+    padding: 1em 3em;
+    font-size: 1.8em;
+    letter-spacing: -1.5%;
+    line-height: 2em;
+    color: var(--white);
+    background-color: var(--maroon);
+    border-radius: 3em;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.responsive-menu {
+    display: none;
+    opacity: 100%;
+    position: absolute;
+    background-color: var(--maroon);
+    height: 100vh;
+    width: 45vw;
+    overflow: none;
+    right: -45vw;
+    transition: all .5s ease-out;
+}
 
 
 
 
 /* Tablet */
 @media only screen and (max-width: 1279px) {
-
+    body:has(#mobile-menu-id:checked) .logo-container,
+    body:has(#mobile-menu-id:checked) main,
+    body:has(#mobile-menu-id:checked) footer {
+            opacity: 50%;
+    }
+    
+    body:has(#mobile-menu-id:checked) .responsive-menu {
+        display: unset;
+        transform: translateX(-45vw);
+        opacity: unset;
+    }
+    
+    body:has(#mobile-menu-id:checked) .responsive-shop-container {
+        display: flex;
+        flex-direction: column;
+        margin-top: 10em;
+        padding: 1.6em 3.2em 1.6em 3.2em;
+        align-items: center;
+    }
+    body:has(#mobile-menu-id:checked) .menu-link-shopnow:hover {
+        background-color: var(--white);
+    }
+    body:has(#mobile-menu-id:checked) .menu-link-shopnow:hover {
+        color: var(--maroon);
+    }
+    
+    body:has(#mobile-menu-id:checked) .menu-link-shopnow {
+        padding: 1.2em 2.1em 1.2em 2.1em;
+        gap: 1em;
+        width: 11.9em;
+        height: 4.4em;
+        background-color: transparent;
+        cursor: pointer;
+        border-color: var(--white);
+        border: 1px solid;
+    }
+    body:has(#mobile-menu-id:checked) .menu-link {
+        padding: 1.2em 2.1em 1.2em 2.1em;
+        gap: 1em;
+        width: 11.9em;
+        height: 4.4em;
+        background-color: transparent;
+        cursor: pointer;
+        border-color: var(--white);
+    }
+    body:has(#mobile-menu-id:checked) .menu-list {
+            cursor: pointer;
+            display: flex;
+            gap: 1em;
+            align-items: center;
+            list-style: none;
+            flex-direction: column;
+            padding-top: 360px;
+    }
+    body:has(#mobile-menu-id:checked) .menu-link:hover {
+       
+       background-color: var(--white);
+    }
+    body:has(#mobile-menu-id:checked) .menu-link:hover {
+        color: var(--maroon);
+    }
+    
+    body:has(#mobile-menu-id:checked) .responsive-menu-checkbox {
+        display: none;
+    }
+    body:has(#mobile-menu-id:checked) .responsive-menu-x {
+        display: unset;
+    }
+    .responsive-menu-x {
+        display: none;
+    }
+    .header-container
+    {
+        width: 95%;
+    }
+    .navbar {
+        display: none;
+    }
+    .navbar-container {
+        display: flex;
+        justify-content: flex-end;
+    }
+    .media-menu {
+        display: unset;
+    }
+    
+    .mobile-menu-class {
+        display: unset;
+    }
 }
 
 
 /* Mobile */
 @media only screen and (max-width: 767px) {
-
-    
+    body:has(#mobile-menu-id:checked) .responsive-menu-checkbox {
+        display: none;
+    }
+    body:has(#mobile-menu-id:checked) .responsive-menu-x {
+        display: unset;
+    }
+    .responsive-menu-x {
+        display: none;
+    }
+    body:has(#mobile-menu-id:checked) .responsive-menu {
+        width: 100vw;
+    }    
 }
