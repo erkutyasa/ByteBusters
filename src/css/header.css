@@ -204,7 +204,7 @@
         display: unset;
     }
     body:has(#mobile-menu-id:checked) {
-        overflow-y: hidden;
+        overflow: hidden;
     }
 }
 
