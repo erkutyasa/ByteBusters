@@ -1,16 +1,52 @@
 /*Desktop*/
+.advertisement {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 10em 0;
+}
 
+.advertisement-content {
+    width: 85%;
+    max-width: 1280px;
+    
+}
+
+.advertisement-content__text{
+    font-family: "Inter Tight", sans-serif;
+    font-size: 7.6em;
+    font-weight: 600;
+    text-transform: uppercase;
+    color: #141414;
+    line-height: 1em;
+}
+
+.advertisement-content__text-colored {
+    color: var(--white);
+    background-color: var(--green);
+    border-radius: .2em;
+    padding: 0 .1em;
+} 
 
 
 
 /* Tablet */
 @media only screen and (max-width: 1279px) {
-
+    .advertisement-content {
+        width: 95%;
+        max-width: 768px;
+        
+    }
+    .advertisement-content__text-colored {
+        display: block;
+    }
 }
 
 
 /* Mobile */
 @media only screen and (max-width: 767px) {
-
-    
+    .advertisement-content {
+        max-width: 450px;   
+    }    
 }
