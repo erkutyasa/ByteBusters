@@ -1,10 +1,281 @@
 /*Desktop*/
+.yourorder {
+    font-family: "Inter Tight", sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: var(--maroon);
+    color: var(--white);
+}
 
+.yourorder-container {
+    max-width: 1280px;
+    max-height: 977px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+
+.yourorder-header {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    margin-bottom: 40px;
+    padding: 30px;
+    padding-left: 80px;
+    gap: 25px;
+    list-style: none;
+}
+
+.yourorder-header-list {
+    display: flex;
+}
+
+.yourorder-h1 {
+    font-size: 64px;
+    line-height: 64px;
+    letter-spacing: -1.5%;
+    font-weight: 600;
+    max-width: 751px;
+    max-height: 128px;
+}
+
+.yourorder-h1-span {
+    opacity: 0.3;
+
+}
+
+.yourorder-form-s1 {
+    color: var(--maroon);
+}
+
+.yourorder-form-s2 {
+    color: var(--green);
+}
+
+.yourorder-header-text {
+    display: block;
+    font-size: 16px;
+    line-height: 20px;
+    display: flex;
+    align-items: flex-start;
+    font-weight: 500;
+    max-width: 742px;
+    max-height: 40px;
+    margin-left: 0;
+}
+
+.yourorder-content {
+    display: flex;
+    justify-content: center;
+    gap: 24px;
+    list-style: none;
+}
+
+.yourorder-form-list {
+    max-width: 527px;
+    max-height: 534px;
+    background-color: var(--white);
+    padding: 20px;
+    border-radius: 30px;
+    width: 45%;
+}
+
+.yourorder-image-list {
+    max-width: 527px;
+    max-height: 534px;
+    background-color: var(--green);
+    padding: 50px;
+    border-radius: 30px;
+    width: 45%;
+}
+
+.yourorder-img {
+    max-width: 427px;
+    max-height: 273px;
+    border-radius: 15px;
+}
+
+.yourorder-form-list .yourorder-h2 {
+    font-size: 24px;
+    margin-bottom: 20px;
+}
+
+.yourorder-h2 {
+    margin-top: 30px;
+    margin-left: 30px;
+    width: 600;
+    color: var(--black);
+}
+
+.yourorder-form {
+    max-width: 429px;
+    max-height: 306px;
+    margin-left: 30px;
+    display: flex;
+    flex-direction: column;
+}
+
+.yourorder-input {
+    max-width: 429px;
+    max-height: 52px;
+    display: flex;
+    justify-content: space-around;
+    margin-bottom: 15px;
+    padding: 10px;
+    border: 1px solid rgba(0, 0, 0, 0.2);
+    border-radius: 30px;
+    padding: 16px, 346px, 16px, 16px;
+}
+
+.yourorder-input-textarea {
+    max-width: 429px;
+    max-height: 95px;
+    margin-bottom: 15px;
+    padding: 10px;
+    border: 1px;
+    border-radius: 15px;
+    padding: 16px, 345px, 59px, 16px;
+    border: 1px solid rgba(0, 0, 0, 0.2);
+}
+
+
+.yourorder-button {
+    font-size: 18px;
+    line-height: 20px;
+    font-weight: 600;
+    max-width: 429px;
+    max-height: 52px;
+    background-color: var(--green);
+    color: white;
+    padding: 16px;
+    border: none;
+    border-radius: 30px;
+    cursor: pointer;
+    gap: 10px;
+}
+
+.yourorder-social-links {
+    font-size: 32px;
+    font-weight: 600;
+    line-height: 32px;
+    letter-spacing: -1.5%;
+    max-width: 357px;
+    max-height: 76px;
+    gap: 12px;
+}
+
+.yourorder-social-links-a {
+    color: var(--white);
+}
+
+.yourorder-social-text {
+    font-weight: 600;
+    font-size: 18px;
+    line-height: 20px;
+    letter-spacing: -1.5%;
+    opacity: 0.5;
+}
+
+.yourorder-button:hover {
+    background-color: #748F6B;
+}
+
+.yourorder-image-list .yourorder-img {
+    width: 100%;
+    border-radius: 10px;
+}
+
+.yourorder-image-list .yourorder-social-text {
+    margin-top: 20px;
+    font-size: 12px;
+}
+
+.yourorder-social-links .yourorder-social-links-a {
+    text-decoration: none;
+}
+
+.yourorder-social-links .yourorder-social-links-a:hover {
+    text-decoration: underline;
+}
+
+.yourorder-input:focus {
+    border-color: #7A3145;
+
+}
+
+#email:valid {
+    border: 1px solid #3CBC81;
+}
+
+#email:invalid {
+    border: 1px solid #E74A3B;
+}
 
 
 
 /* Tablet */
 @media only screen and (max-width: 1279px) {
+    .yourorder-container {
+        max-width: 768px;
+        max-height: 1576px;
+        margin: auto;
+    }
+
+    .yourorder-content {
+        width: 100%;
+        margin: 1%;
+        display: inline-block;
+    }
+
+    .yourorder-header {
+        margin-top: 40px;
+        padding-left: 0;
+        margin-left: 0;
+    }
+
+    .yourorder-header-list {
+        margin-left: 10px;
+    }
+
+    .yourorder-header-list:first-child {
+        min-width: 640px;
+        min-height: 192px;
+    }
+
+    .yourorder-header-list:last-child {
+        min-width: 640px;
+        min-height: 60px;
+        margin-top: 0;
+    }
+
+    .yourorder-form-list {
+        width: 100%;
+        margin-top: 0;
+    }
+
+    .yourorder-image-list {
+        width: 100%;
+        margin-top: 20px;
+    }
+
+    .yourorder-form {
+        max-width: 428px;
+        max-height: 306px;
+    }
+
+    .yourorder-form-list-container {
+        max-width: 428px;
+    }
+
+    .two-list {
+        margin-left: 70px;
+
+    }
+
+    .yourorder-social-links {
+        min-width: 492px;
+        min-height: 67px;
+    }
 
 }
 
@@ -12,5 +283,82 @@
 /* Mobile */
 @media only screen and (max-width: 767px) {
 
-    
+    .yourorder-container {
+        width: 70%;
+        padding: 80px, 20px, 80px, 20px;
+    }
+
+    .yourorder-content {
+        width: 100%;
+
+    }
+
+    .yourorder-header {
+        margin-top: 40px;
+    }
+
+    .yourorder-container-content {
+
+        margin: 0;
+    }
+
+    .yourorder-content {
+        display: grid;
+        align-items: center;
+        justify-content: center;
+        margin: 15px;
+    }
+
+
+    .yourorder-header-list {}
+
+    .yourorder-header-list:first-child {
+        min-width: 335px;
+        min-height: 200px;
+    }
+
+    .yourorder-h1 {
+        font-size: 48px;
+    }
+
+    .yourorder-header-text {
+        font-size: 14px;
+        margin-top: auto;
+    }
+
+
+    .yourorder-header-list:last-child {
+        min-width: 335px;
+        min-height: 72px;
+
+    }
+
+    .yourorder-form-list {
+        width: 90%;
+        margin: auto 0;
+    }
+
+    .yourorder-image-list {
+        width: 90%;
+        margin-top: 20px;
+        margin: auto 0;
+    }
+
+    .two-list {}
+
+    .yourorder-social-links {
+        max-width: 295px;
+        max-height: 60px;
+        font-size: 24px;
+        line-height: 26px;
+    }
+
+    .yourorder-social-text {
+        font-size: 14px;
+    }
+
+    .yourorder-img {
+        width: auto;
+        background-position: center;
+    }
 }
