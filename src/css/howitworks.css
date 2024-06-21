@@ -1,6 +1,17 @@
 /*Desktop*/
 .howitworks{
     display: flex;
+    justify-content: center;
+    align-items:center ;
+    width: 100%;
+    position: relative;
+}
+.howitworks_main{
+    position: absolute;
+    top: 50%;
+    width: 100%;
+    max-width: 1440px;
+    display:flex;
 }
 
 .howitworks__card {
@@ -152,7 +163,10 @@
         align-items: center;
         justify-content: center;
     }
-    
+    .howitworks_main{
+        flex-direction: column ;
+        max-width: 1280px;
+    }
     .howitworks__card--left{
         width: 100%;
         max-width: 1280px;
@@ -176,6 +190,9 @@
 
 /* Mobile */
 @media only screen and (max-width: 767px) {
+    .howitworks_main{
+        max-width: 768px;
+    }
     .howitworks__card--left{
         width: 100%;
         max-width: 768px;
