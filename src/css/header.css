@@ -7,24 +7,27 @@
     display: flex;
     align-items: center;
     justify-content: center;
+  
     
 }
 .header-container {
     width: 85%;
     display: flex;
     max-width: 1280px;
+    z-index: 7000;
 
 }
 .logo-container {
     display: flex;
     align-items: center;
     flex: 1;
+
 }
 .navbar-container {
     font-family: 'Inter Tight' , sans-serif;
     flex: 1;
     display: flex;
-    justify-content: space-between;
+    justify-content: space-around;
     align-items: center;
 }
 .menu-list {
@@ -42,7 +45,10 @@
 }
 .media-menu {
     display: none;
-    z-index: 1000;
+    z-index: 3000;
+    position: fixed;
+    top: 3em;
+    right: 5em;
 }
 
 .mobile-menu-class {
@@ -52,6 +58,7 @@
     width: 4em;
     height: 4em;
     display: none;
+    position:fixed;
    
 }
 #mobile-menu-id {
@@ -65,7 +72,7 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    padding: 1em 2em;
+    padding: 0.7em 0.7em;
     border-radius: 1.2em;
     background-color: transparent;
     border: 1px solid;
@@ -76,7 +83,7 @@
 
 .menu-link-shopnow {
     text-decoration: none;
-    padding: 1em 3em;
+    padding: 1em 2em;
     font-size: 1.8em;
     letter-spacing: -1.5%;
     line-height: 2em;
@@ -90,7 +97,6 @@
 
 .responsive-menu {
     display: none;
-    opacity: 100%;
     position: absolute;
     background-color: var(--maroon);
     height: 100vh;
@@ -98,7 +104,10 @@
     overflow: none;
     right: -45vw;
     transition: all .5s ease-out;
+    position:fixed;
+    z-index: 900;
 }
+
 
 
 
@@ -114,7 +123,7 @@
     body:has(#mobile-menu-id:checked) .responsive-menu {
         display: unset;
         transform: translateX(-45vw);
-        opacity: unset;
+        
     }
     
     body:has(#mobile-menu-id:checked) .responsive-shop-container {
@@ -193,6 +202,9 @@
     
     .mobile-menu-class {
         display: unset;
+    }
+    body:has(#mobile-menu-id:checked) {
+        overflow: hidden;
     }
 }
 
