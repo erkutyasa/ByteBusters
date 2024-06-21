@@ -4,9 +4,7 @@
   padding: 7em 10em;
 }
 
-.footer-all {
-  display: flex;
-  flex-direction: row;
+.footer-sector-one {
   width: 85%;
   max-width: 1280px;
 }
@@ -97,7 +95,7 @@
 
 /* Tablet */
 @media only screen and (max-width: 1279px) {
-  .footer-all {
+  .footer-sector-one {
     width: 95%;
     max-width: 768px;
   }
@@ -116,7 +114,7 @@
 
 /* Mobile */
 @media only screen and (max-width: 767px) {
-  .footer-all {
+  .footer-sector-one {
     flex-direction: column;
     width: 95%;
     max-width: 450px;
