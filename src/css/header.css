@@ -21,7 +21,6 @@
     display: flex;
     align-items: center;
     flex: 1;
-
 }
 .navbar-container {
     font-family: 'Inter Tight' , sans-serif;
@@ -223,4 +222,7 @@
     body:has(#mobile-menu-id:checked) .responsive-menu {
         width: 100vw;
     }    
+    body:has(#mobile-menu-id:checked) .logo-container {
+        display: none;
+    }
 }
