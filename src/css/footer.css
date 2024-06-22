@@ -1,25 +1,32 @@
 /*Desktop*/
 .footer {
   background-color: var(--maroon);
+  padding: 7em 10em;
 }
-.footer-sector-one {
+
+.footer-all {
   display: flex;
   flex-direction: row;
-  padding: 5%, 10%, 5%, 10%;
-  flex-wrap: wrap;
+  width: 85%;
+  max-width: 1280px;
+}
+.footer-contents {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
 }
 .footer-logo-slogan {
   display: flex;
   flex-direction: column;
   gap: 15px;
-  padding-left: 5%;
+
   width: 50%;
 }
 
 .footer-slogan {
   font-family: 'Inter Tight';
   font-weight: 500;
-  line-height: 1em;
+  line-height: 2em;
   color: var(--white);
   font-size: 1.6em;
   width: 80%;
@@ -27,11 +34,10 @@
 .footer-links {
   display: flex;
   justify-content: space-between;
-  padding-right: 5%;
   width: 50%;
 }
 .footer-internal-link {
-  width: 50%;
+  width: 100%;
 }
 .footer-internal-link-list {
   list-style-type: none;
@@ -49,8 +55,11 @@
 
 .footer-company-contact-information-list {
   list-style-type: none;
+  display: flex;
+  flex-direction: column;
+  row-gap: 1em;
 }
-.footer-company-contact-information-list-item {
+.footer-company-contact-information {
   font-family: 'Inter Tight';
   font-weight: 600;
   text-decoration: none;
@@ -58,30 +67,25 @@
   letter-spacing: 0.15em;
   color: var(--white);
   font-size: 1.8em;
+  width: 100%;
 }
+
 .footer-link-tel {
-  font-family: 'Inter Tight';
-  font-weight: 600;
-  text-decoration: none;
   color: var(--white);
-  font-size: 1.8em;
-  line-height: 2;
-  letter-spacing: 0.15em;
+  text-decoration: none;
 }
+
 .footer-privacy-policy-cookie-main {
   background-color: var(--maroon);
   color: var(--white);
   display: flex;
   flex-direction: row;
   justify-content: space-between;
-  align-items: flex-end;
-  padding: 5% 5% 5% 5%;
   width: 100%;
 }
 
 .privacy-cookie-link {
   color: var(--white);
-
   cursor: text;
   text-decoration: none;
   font-family: 'Inter Tight';
@@ -93,6 +97,11 @@
 
 /* Tablet */
 @media only screen and (max-width: 1279px) {
+  .footer-all {
+    width: 95%;
+    max-width: 768px;
+  }
+
   .footer-links {
     display: flex;
     flex-direction: column;
@@ -107,9 +116,13 @@
 
 /* Mobile */
 @media only screen and (max-width: 767px) {
-  .footer-sector-one {
+  .footer-all {
     flex-direction: column;
-    gap: 40px;
+    width: 95%;
+    max-width: 450px;
+  }
+  .footer-contents {
+    flex-direction: column;
   }
   .footer-internal-link {
     width: 100%;
@@ -117,11 +130,15 @@
 
   .footer-links {
     width: 100%;
-    padding-left: 5%;
   }
   .footer-logo-slogan {
     width: 100%;
   }
+  .footer-slogan {
+    line-height: 1.8;
+    font-size: 1.4em;
+  }
+
   .footer-internal-link-list-item-link {
     font-size: 2.8em;
     line-height: 2.8;
