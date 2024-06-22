@@ -75,16 +75,13 @@
 
 .footer-container__top-right__contact-item {
   font-family: 'Inter Tight', sans-serif;
-  font-size: 1.4em;
+  font-size: 1.8em;
   font-weight: 600;
   color: var(--white);
 }
 
 .footer-container__top-right__contact-item a {
   text-decoration: none;
-  font-family: 'Inter Tight', sans-serif;
-  font-size: 1.4em;
-  font-weight: 600;
   color: var(--white);
 }
 
@@ -140,5 +137,20 @@
   .footer-container__top {
     flex-direction: column;
     gap: 5em;
+  }
+  .footer-container__top-left__desc {
+    font-size: 1.4em;
+  }
+  .footer-container__top-right__link-item a {
+    font-size: 2.8em;
+  }
+  .footer-container__bottom-left {
+    font-size: 1.2em;
+  }
+  .footer-container__bottom-right {
+    font-size: 1.2em;
+  }
+  .footer-container__top-right__contact-item {
+    font-size: 1.4em;
   }
 }
