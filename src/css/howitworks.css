@@ -4,13 +4,10 @@
     justify-content: center;
     align-items:center ;
     width: 100%;
-    position: relative;
 }
 .howitworks_main{
-    position: absolute;
     top: 50%;
     width: 100%;
-    max-width: 1440px;
     display:flex;
 }
 
