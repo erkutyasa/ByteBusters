@@ -4,11 +4,36 @@
     justify-content: center;
     align-items:center ;
     width: 100%;
+    height: 80vh;
+    position: relative;
 }
+.howitworks__outline {
+    position: absolute;
+    z-index: 1;
+    left: 0;
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    height: 100%;
+}
+
+.howitworks__outline-left {
+    flex: 1;
+    background-color: var(--maroon);
+}
+
+.howitworks__outline-right {
+    flex: 1;
+    background-color: var(--green);
+}
+
 .howitworks_main{
     top: 50%;
     width: 100%;
+    max-width: 1280px;
     display:flex;
+    height: 100%;
+    z-index: 10;
 }
 
 .howitworks__card {
@@ -20,9 +45,11 @@
 
 .howitworks__card--left {
     width: 50%;
-    height: 759px;
-    background-color: var(--maroon);
-    padding-top: 10em;
+    max-width: 640px;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 .howitworks__card--img{
@@ -30,8 +57,8 @@
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
-    width: 85%;
-    height: 55.9em;
+    width: 75%;
+    height: 80%;
     margin: 0 auto;
     padding-top: 10em;
     display: flex;
@@ -51,8 +78,8 @@
     justify-content: center;
     align-items: center;
     width: 50%;
-    height: 759px;
-    background-color: var(--green);
+    max-width: 640px;
+    height: 100%;
     gap : 5em;
 }
 .howitworks__card--head{
@@ -61,8 +88,7 @@
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    width: 85%;
-    
+    width: 70%;    
 }
 
 .howitworks__card--subtitle{
@@ -85,7 +111,7 @@
     color: #889970;
 }
 .howitworks__card--list{
-    width: 85%;
+    width: 70%;
     display: flex;
     flex-direction: column;
     gap: 2em;
@@ -132,24 +158,6 @@
 .howitworks__card--listitem p b{
     color: var(--black);
 }
-.circle {
-    width: 50px;
-    /* Dairenin genişliği */
-    height: 50px;
-    /* Dairenin yüksekliği */
-    background-color: lightblue;
-    /* Dairenin içi */
-    border: 2px solid darkblue;
-    /* Dairenin kenarı */
-    border-radius: 50%;
-    /* Kenar yarıçapı, bu daireyi oluşturur */
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    font-size: 20px;
-}
-
-
 
 
 /* Tablet */
@@ -159,6 +167,10 @@
         flex-direction: column;
         align-items: center;
         justify-content: center;
+        height: 120vh;
+    }
+    .howitworks__outline{
+        display: none;
     }
     .howitworks_main{
         flex-direction: column ;
@@ -167,6 +179,7 @@
     .howitworks__card--left{
         width: 100%;
         max-width: 1280px;
+        background-color: var(--maroon);
     }
     
     .howitworks__card--img{
@@ -181,6 +194,7 @@
         flex-direction: column;
         justify-content: center;
         align-items: center;
+        background-color: var(--green);
     }
 }
 
@@ -203,5 +217,14 @@
     .howitworks__card--right{
         width: 100%;
         max-width: 768px;
-    }    
+    }  
+    .howitworks__card--subtitle {
+        font-size: 2.8em;
+    }
+    .howitworks__card--text{
+        font-size: 1.4em;
+    }
+    .howitworks__card--listitem {
+        font-size: 1.2em;
+    }
 }
