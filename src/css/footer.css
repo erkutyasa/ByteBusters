@@ -1,154 +1,144 @@
 /*Desktop*/
 .footer {
+  display: flex;
+  width: 100%;
   background-color: var(--maroon);
-  padding: 7em 10em;
+  padding: 10em 0 3em;
+  justify-content: center;
 }
 
-.footer-sector-one {
+.footer-container {
   width: 85%;
   max-width: 1280px;
   display: flex;
   flex-direction: column;
-  row-gap: 10em;
+  gap: 10em;
 }
-.footer-contents {
+
+.footer-container__top {
+  width: 100%;
   display: flex;
-  flex-direction: row;
   justify-content: space-between;
-  row-gap: 5em;
 }
-.footer-logo-slogan {
+
+.footer-container__top-left {
+  flex: 1;
+}
+
+.footer-container__top-left__container {
+  width: 28em;
   display: flex;
   flex-direction: column;
-  row-gap: 1.5em;
-
-  width: 50%;
+  gap: 1.8em;
 }
 
-.footer-slogan {
-  font-family: 'Inter Tight';
-  font-weight: 500;
-  line-height: 2em;
-  color: var(--white);
+.footer-container__top-left__logo {
+  width: 20em;
+}
+
+.footer-container__top-left__desc {
+  font-family: 'Inter Tight', sans-serif;
   font-size: 1.6em;
-  width: 80%;
+  font-weight: 500;
+  color: var(--white);
 }
-.footer-links {
+
+.footer-container__top-right {
+  flex: 1;
   display: flex;
   justify-content: space-between;
-  width: 50%;
-  row-gap: 5em;
-}
-.footer-internal-link {
-  width: 100%;
-}
-.footer-internal-link-list {
-  list-style-type: none;
+  gap: 2em;
 }
 
-.footer-internal-link-list-item-link {
-  font-family: 'Inter Tight';
-  font-weight: 500;
-  line-height: 3.2;
-  letter-spacing: 0.15em;
-  color: var(--white);
-  text-decoration: none;
-  font-size: 3.2em;
-}
-
-.footer-company-contact-information-list {
+.footer-container__top-right__link {
   list-style-type: none;
   display: flex;
   flex-direction: column;
-  row-gap: 1em;
+  gap: 1.5em;
 }
-.footer-company-contact-information {
-  font-family: 'Inter Tight';
+
+.footer-container__top-right__link-item a {
+  text-decoration: none;
+  font-family: 'Inter Tight', sans-serif;
+  font-size: 3.2em;
   font-weight: 600;
-  text-decoration: none;
-  line-height: 2;
-  letter-spacing: 0.15em;
   color: var(--white);
-  font-size: 1.8em;
-  width: 100%;
 }
 
-.footer-link-tel {
-  color: var(--white);
-  text-decoration: none;
-}
-
-.footer-privacy-policy-cookie-main {
-  background-color: var(--maroon);
-  color: var(--white);
+.footer-container__top-right__contact {
+  list-style-type: none;
   display: flex;
-  flex-direction: row;
-  justify-content: space-between;
-  width: 100%;
+  flex-direction: column;
+  gap: 1.5em;
+  width: 28em;
 }
 
-.privacy-cookie-link {
+.footer-container__top-right__contact-item {
+  font-family: 'Inter Tight', sans-serif;
+  font-size: 1.4em;
+  font-weight: 600;
   color: var(--white);
-  cursor: text;
+}
+
+.footer-container__top-right__contact-item a {
   text-decoration: none;
-  font-family: 'Inter Tight';
+  font-family: 'Inter Tight', sans-serif;
+  font-size: 1.4em;
+  font-weight: 600;
+  color: var(--white);
+}
+
+.footer-container__bottom {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+}
+
+.footer-container__bottom-left {
+  font-family: 'Inter Tight', sans-serif;
+  font-size: 1.4em;
   font-weight: 500;
-  font-size: 1.8em;
-  line-height: 2;
-  letter-spacing: 0.15em;
+  color: rgba(251, 251, 251, 0.5);
+}
+
+.footer-container__bottom-left a {
+  text-decoration: none;
+  color: rgba(251, 251, 251, 0.5);
+}
+
+.footer-container__bottom-right {
+  font-family: 'Inter Tight', sans-serif;
+  font-size: 1.4em;
+  font-weight: 500;
+  color: rgba(251, 251, 251, 0.5);
 }
 
 /* Tablet */
 @media only screen and (max-width: 1279px) {
-  .footer-sector-one {
+  .footer-container {
     width: 95%;
     max-width: 768px;
   }
 
-  .footer-links {
-    display: flex;
+  .footer-container__top-left {
+    flex: unset;
+  }
+
+  .footer-container__top-right {
     flex-direction: column;
-  }
-  .footer-internal-link {
-    width: 100%;
-  }
-  .footer-company-contact-information {
-    width: 100%;
+    flex: unset;
+    gap: 5em;
   }
 }
 
 /* Mobile */
 @media only screen and (max-width: 767px) {
-  .footer-sector-one {
-    flex-direction: column;
-    width: 95%;
+  .footer-container {
     max-width: 450px;
   }
-  .footer-contents {
+
+  .footer-container__top {
     flex-direction: column;
-  }
-  .footer-internal-link {
-    width: 100%;
-  }
-
-  .footer-links {
-    width: 100%;
-  }
-  .footer-logo-slogan {
-    width: 100%;
-  }
-  .footer-slogan {
-    line-height: 1.8;
-    font-size: 1.4em;
-  }
-
-  .footer-internal-link-list-item-link {
-    font-size: 2.8em;
-    line-height: 2.8;
-    font-weight: 600;
-  }
-  .privacy-cookie-link {
-    font-size: 1.2em;
-    line-height: 1.6;
+    gap: 5em;
   }
 }
