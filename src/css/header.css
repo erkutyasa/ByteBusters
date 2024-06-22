@@ -45,7 +45,7 @@
 .media-menu {
     display: none;
     z-index: 3000;
-    position: fixed;
+    position: absolute;
     top: 3em;
     right: 5em;
 }
@@ -57,7 +57,7 @@
     width: 4em;
     height: 4em;
     display: none;
-    position:fixed;
+    position:absolute;
    
 }
 #mobile-menu-id {
