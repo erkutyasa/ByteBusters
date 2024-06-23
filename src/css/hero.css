@@ -31,7 +31,7 @@
 .hero-div {
     max-width: 610px;
     position: absolute;
-    bottom: 3em;
+    bottom: 1em;
     right: 3em;
     width: 70%;
     display: flex;
@@ -40,18 +40,16 @@
 }
 
 #hero-header {
-    font-family: "Inter Tight", sans-serif;
     font-weight: 600;
-    font-size: 6.4em;
+    font-size: 7.6em;
+    line-height: 1;
     margin-bottom: 2.5em;
 }
 
 #hero-description {
-    font-family: "Inter Tight";
     font-weight: 500;
     font-size: 1.6em;
-    line-height: 2em;
-    word-spacing: 0.6em;
+    line-height: 1.25;
 }
 
 /* Tablet */
@@ -70,6 +68,7 @@
     #hero-header {
         margin-bottom: 0.5em;
         margin-top: 10vh;
+        font-size: 7.6em;
     }
 }
 
@@ -77,11 +76,17 @@
 /* Mobile */
 @media only screen and (max-width: 767px) {
 .hero-div {
+    justify-content: center;
     max-width: 450px;
 }
 
 #hero-header {
     margin-bottom: 0.3em;
     margin-top: 7vh;
+    font-size: 4.8em;
+}
+#hero-description {
+    font-size: 1.4em;
+    line-height: 1.3;
 }
 }

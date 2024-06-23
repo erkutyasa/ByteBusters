@@ -17,6 +17,7 @@
     font-family: "Inter Tight", sans-serif;
     font-size: 7.6em;
     font-weight: 600;
+    line-height: 1.05;
     text-transform: uppercase;
     color: #141414;
     line-height: 1em;
@@ -38,6 +39,10 @@
         max-width: 768px;
         
     }
+    .advertisement-content__text{
+        font-size: 6.4em;
+        line-height: 1.1;
+    }
     .advertisement-content__text-colored {
         display: block;
     }
@@ -48,5 +53,9 @@
 @media only screen and (max-width: 767px) {
     .advertisement-content {
         max-width: 450px;   
-    }    
+    }  
+    .advertisement-content__text{
+        font-size: 4.8em;
+        line-height: 1.4;
+    }  
 }

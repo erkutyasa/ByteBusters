@@ -37,7 +37,7 @@
 
 body {
   font-family: 'Inter tight', sans-serif;
-  font-size: 8px; /* 1em = 10px*/
+  font-size: 10px; /* 1em = 10px*/
   width: 100vw;
   height: 100vh;
   min-width: 425px;

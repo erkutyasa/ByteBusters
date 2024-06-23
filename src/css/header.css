@@ -63,11 +63,13 @@
 #mobile-menu-id {
     display: none;
 }
+
 .menu-link{
     text-decoration: none;
     color: var(--white);
     font-size: 1.6em;
     line-height: 2em;
+    font-weight: 500;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -144,6 +146,8 @@
     }
     
     body:has(#mobile-menu-id:checked) .menu-link-shopnow {
+        font-size: 1.8em;
+        line-height: 2em;
         padding: 1.2em 2.1em 1.2em 2.1em;
         gap: 1em;
         width: 11.9em;
@@ -228,5 +232,15 @@
     }    
     body:has(#mobile-menu-id:checked) .logo-container {
         display: none;
+    }
+
+    .menu-link{
+        font-size: 1.4em;
+        line-height: 1.8em;
+    }
+
+    .menu-link-shopnow{
+        font-size: 1.4em;
+        line-height: 1.8em;
     }
 }

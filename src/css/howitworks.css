@@ -92,16 +92,13 @@
 }
 
 .howitworks__card--subtitle{
-    font-family: 'Inter Tight', sans-serif;
     font-weight: 600;
     font-size: 3.2em;
-    line-height: 1em;  
-    letter-spacing: -0.015em;  
+    line-height: 1;
     color: var(--white);
     text-transform: uppercase;
 }
 .howitworks__card--text{
-    font-family: 'Inter Tight', sans-serif;
     font-weight: 500;
     font-size: 1.6em;
     line-height: 1.1em;
@@ -120,10 +117,9 @@
 .howitworks__card--listitem{
     display: flex;
     align-items: center;
-    font-family: 'Inter Tight', sans-serif;
     font-weight: 500;
     font-size: 1.6em;
-    line-height: 1.4em;
+    line-height: 1.25;
     color: var(--black);
     background-color: var(--white);
     border-radius: 1.5em;
@@ -223,8 +219,10 @@
     }
     .howitworks__card--text{
         font-size: 1.4em;
+        line-height: 1.30;
     }
     .howitworks__card--listitem {
         font-size: 1.2em;
+        line-height: 1.17;
     }
 }
