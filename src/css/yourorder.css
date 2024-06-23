@@ -153,19 +153,13 @@
     padding-left: .5em;
 }
 
-#email:valid {
+.yourorder-input-textarea:valid,
+.yourorder-input:valid {
     border: 1px solid #3CBC81;
 }
 
-#email:invalid {
-    border: 1px solid #E74A3B;
-}
-
-#pattern:valid {
-    border: 1px solid #3CBC81;
-}
-
-#pattern:invalid {
+.yourorder-input-textarea:invalid,
+.yourorder-input:invalid {
     border: 1px solid #E74A3B;
 }
 
