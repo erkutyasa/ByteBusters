@@ -92,6 +92,10 @@
     display: flex;
     justify-content: center;
     align-items: center;
+    transition: all .3s ease-in-out;
+}
+.menu-link-shopnow:hover {
+    background-color: #622133;
 }
 
 .responsive-menu {
