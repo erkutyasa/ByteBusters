@@ -33,25 +33,30 @@
                     </div>
                     <div class="yourorder-form-list-container">
                         <form class="yourorder-form">
-                            <input class="yourorder-input" type="text" placeholder="Full Name" required>
-                            <input class="yourorder-input" type="email" id="email" placeholder="Email" required>
-                            <textarea rows="3" class="yourorder-input-textarea" placeholder="Comment"
+                            <input class="yourorder-input" id="pattern" type="text" pattern="[a-zA-Z]"
+                                placeholder="Full Name" required>
+                            <input class="yourorder-input" id="pattern" type="email"
+                                pattern="([A-z0-9_.-]{1,})@([A-z0-9_.-]{1,}).([A-z]{2,8})" placeholder="Email" required>
+                            <textarea rows="3" class="yourorder-input-textarea" id="pattern"
+                                pattern="([A-z0-9_.-]{1,})@([A-z0-9_.-]{1,}).([A-z]{2,8})" placeholder="Comment"
                                 required></textarea>
                             <button class="yourorder-button" type="submit">SEND</button>
                         </form>
                     </div>
                 </li>
                 <li class="yourorder-image-list two-list">
-                    <img class="yourorder-img" src="/images/img-3.png" alt="Healthy Food" width="427"
-                        height="273">
+                    <img class="yourorder-img" src="/images/img-3.png" alt="Healthy Food" width="427" height="273">
                     <p class="yourorder-social-text">Follow us on our social networks:</p>
                     <div class="yourorder-social-links">
-                        <a class="yourorder-social-links-a"
-                            href="https://www.instagram.com/goit.turkiye/">instagram</a> /
-                        <a class="yourorder-social-links-a"
-                            href="https://www.facebook.com/people/GOIT-T%C3%BCrkiye/61558036560161/">facebook</a>
-                        /
-                        <a class="yourorder-social-links-a" href="https://m.youtube.com/@GoITTurkey">youtube</a>
+                        <ul class="yourorder-social-links-list">
+                            <li class="yourorder-social-links-list-li"><a class="yourorder-social-links-a"
+                                    href="https://www.instagram.com/goit.turkiye/">instagram /</a> </li>
+                            <li class="yourorder-social-links-list-li"><a class="yourorder-social-links-a"
+                                    href="https://www.facebook.com/people/GOIT-T%C3%BCrkiye/61558036560161/">facebook
+                                    /</a></li>
+                            <li class="yourorder-social-links-list-li"><a class="yourorder-social-links-a"
+                                    href="https://m.youtube.com/@GoITTurkey">youtube</a></li>
+                        </ul>
                     </div>
                 </li>
             </ul>
